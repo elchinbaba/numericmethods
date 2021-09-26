@@ -45,8 +45,8 @@ int main()
             xi[i+1]=c[i]/(b[i]-a[i]*xi[i]);
             eta[i+1]=(a[i]*eta[i]-d[i])/(b[i]-a[i]*xi[i]);
         }
-        else { r=false; cout<<"usul korrekt deyil."<<endl; break; }
-        if(t && xi[i+1]>1) { t=false; cout<<"usul dayaniqli deyil."<<endl; }
+        else { r=false; cout<<"method is not accurate."<<endl; break; }
+        if(t && xi[i+1]>1) { t=false; cout<<"method is not sustainable."<<endl; }
     }
     double y[n+1];
     chi_2=b_1/(b_1+h*b_0); mu_2=h*B/(h*b_0+b_1);
