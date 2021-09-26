@@ -23,7 +23,7 @@ double* qovma(double a[], double b[], double c[], double d[], int n)
             p[i+1]=c[i]/(b[i]-a[i]*p[i]);
             q[i+1]=(a[i]*q[i]-d[i])/(b[i]-a[i]*p[i]);
         }
-        else { r=false; cout<<"method is not accurate."<<endl; break; }
+        else { r=false; cout<<"method is not correct."<<endl; break; }
         if(t && p[i+1]>1) { t=false; cout<<"method is not sustainable."<<endl; }
     }
     double *y;
